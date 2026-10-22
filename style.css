@@ -1,0 +1,166 @@
+/* Apply border-box sizing to every element */
+* {
+    box-sizing: border-box;
+}
+
+/* Page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(150, 188, 201);
+    margin: 0;
+    padding: 20px;
+    color: #333333;
+}
+
+/* Main registration form container */
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 5px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Main heading */
+h1 {
+    color: #1e3a8a;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+/* Subtitle */
+.subtitle {
+    color: #666666;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label,
+.field-label {
+    display: block;
+    color: #333333;
+    font-size: 15px;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+/* Inputs, dropdowns, and text area */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Focus effect */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 4px rgba(37, 99, 235, 0.35);
+}
+
+/* Gender radio buttons */
+.gender-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 8px 0;
+}
+
+.gender-options .option-label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+}
+
+.gender-options input {
+    width: auto;
+}
+
+/* Terms and conditions checkbox */
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.terms input {
+    width: auto;
+    flex-shrink: 0;
+}
+
+.terms label {
+    margin: 0;
+}
+
+/* Button layout */
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Shared button styles */
+button {
+    flex: 1;
+    padding: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Register button */
+.register-btn {
+    background-color: #2563eb;
+}
+
+.register-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Reset button */
+.reset-btn {
+    background-color: #6b7280;
+}
+
+.reset-btn:hover {
+    background-color: #4b5563;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .form-container {
+        margin: 10px auto;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
